@@ -48,8 +48,13 @@ namespace Searching
 		return middleIndex;
 	}
 
-	/*int linearSearch(std::vector<int> const& v, int value)
+	int linearSearch(std::vector<int> const& v, int value)
 	{
-
-	}*/
+		for (int i = 0; i < v.size(); ++i)
+		{
+			if (v[i] == value)
+				return i;
+		}
+		return -1;
+	}
 }
